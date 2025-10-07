@@ -121,8 +121,8 @@ Book{title='The Silent Patient', author='Alex Michaelides', isbn='12345', availa
 
 **Harsh Shrivastava**  
 Computer Science Major  
-📧 Email: *(add your contact if you want)*  
-💼 GitHub: [your-github-username](https://github.com/your-github-username)
+📧 Email: *harshgrowthimpex@gmail.com*  
+💼 GitHub: [harshrivastava](https://github.com/harshrivastava)
 
 ---
 
