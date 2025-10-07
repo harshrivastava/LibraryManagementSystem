@@ -1,83 +1,80 @@
-📚 Library Management System (Java Console Application)
-📝 Overview
+# 📚 Library Management System (Java Console Application)
 
-The Library Management System is a simple Java-based console application that helps manage a collection of books.
-It allows users to add, issue, return, and view books using an interactive command-line interface.
+## 📝 Overview
 
-This project demonstrates core concepts of Object-Oriented Programming (OOP) in Java such as:
+The **Library Management System** is a Java-based console application designed to help manage a collection of books. It allows users to add, issue, return, and view books through an interactive command-line interface.
 
-Classes and Objects
+This project demonstrates core concepts of **Object-Oriented Programming (OOP)** in Java, including:
 
-Encapsulation
+- **Classes and Objects**
+- **Encapsulation**
+- **Collections** (`HashMap`)
+- **User Interaction** (`Scanner`)
+- **Exception Handling**
 
-Data management using Collections (HashMap)
+---
 
-User interaction using Scanner
+## ⚙️ Features
 
-⚙️ Features
+- **➕ Add Book:** Add new books with title, author, and ISBN.
+- **📖 Issue Book:** Issue a book (mark as unavailable).
+- **🔄 Return Book:** Return an issued book (mark as available).
+- **🔍 Show Book Info:** View details of a specific book by ISBN.
+- **📚 Show All Books:** Display all books in the library.
+- **❌ Exit:** Safely exit the application.
 
-➕ Add Book: Add new books to the library with title, author, and ISBN.
+---
 
-📖 Issue Book: Issue a book (mark it as unavailable).
+## 🧩 Class Structure
 
-🔄 Return Book: Return an issued book (mark it as available).
+### `Book`
+Represents a single book entity:
+- `title` (String)
+- `author` (String)
+- `isbn` (String)
+- `isAvailable` (boolean)
 
-🔍 Show Book Info: View detailed information about a specific book using its ISBN.
+### `Library`
+Handles main library operations:
+- Add, issue, and return books
+- Search by ISBN
+- Display all books
+- Uses `HashMap<String, Book>` for efficient storage
 
-📚 Show All Books: Display all books currently in the library.
+### `LibraryManagementSystem`
+Main class that runs the menu-driven system and interacts with the user via the console.
 
-❌ Exit: Exit the application safely.
+---
 
-🧩 Class Structure
-Book
+## 🧠 Concepts Used
 
-Represents a single book entity with:
+- **Encapsulation:** Book properties are private, accessed via getters/setters.
+- **Collections:** `HashMap` for storing and retrieving books by ISBN.
+- **Exception Handling:** Input validation and checks for existing/missing books.
+- **Loops & Conditionals:** For user interaction and menu navigation.
 
-title (String)
+---
 
-author (String)
+## 🚀 Getting Started
 
-isbn (String)
+### 1️⃣ Prerequisites
+- Java JDK installed ([Download here](https://www.oracle.com/java/technologies/downloads/))
+- Command-line access
 
-isAvailable (boolean)
-
-Library
-
-Handles all the main library operations like:
-
-Adding, issuing, and returning books
-
-Searching for books by ISBN
-
-Displaying all books in the system
-
-Uses a HashMap<String, Book> to store books efficiently.
-
-LibraryManagementSystem
-
-Main class that runs the menu-driven system and interacts with the user through the console.
-
-🧠 Concepts Used
-
-Encapsulation: Book properties are private and accessed through getters/setters.
-
-Collections (HashMap): Used for storing and retrieving books by ISBN.
-
-Exception Handling: Input validation and checks for existing or missing books.
-
-Loops & Conditionals: For user interaction and menu navigation.
-
-🚀 How to Run
-1️⃣ Compile the program:
+### 2️⃣ Compile the Program
+```sh
 javac LibraryManagementSystem.java
+```
 
-2️⃣ Run the program:
+### 3️⃣ Run the Program
+```sh
 java LibraryManagementSystem
+```
 
-3️⃣ Follow on-screen options:
+### 4️⃣ Follow On-Screen Options
 
-Example interaction:
-
+#### Example Interaction
+```
 ===== LIBRARY MANAGEMENT SYSTEM =====
 1. Add Book
 2. Issue Book
@@ -86,8 +83,10 @@ Example interaction:
 5. Show All Books
 6. Exit
 Choose an option:
+```
 
-🧾 Example Output
+#### Example Output
+```
 Enter book title: The Silent Patient
 Enter author name: Alex Michaelides
 Enter ISBN: 12345
@@ -105,20 +104,35 @@ Choose an option: 5
 --- ALL BOOKS ---
 Book{title='The Silent Patient', author='Alex Michaelides', isbn='12345', available=true}
 ------------------
+```
 
-💡 Future Enhancements
+---
 
-Add file storage or database to save books permanently.
+## 💡 Future Enhancements
 
-Implement a user login system for librarians.
+- Add file storage or database for persistent book data
+- Implement user login system for librarians
+- Add search by title/author
+- Develop a GUI version using Java Swing or JavaFX
 
-Include search by title/author feature.
+---
 
-Develop a GUI version using Java Swing or JavaFX.
+## 👨‍💻 Author
 
-👨‍💻 Author
+**Harsh Shrivastava**  
+Computer Science Major  
+📧 Email: *(add your contact if you want)*  
+💼 GitHub: [your-github-username](https://github.com/your-github-username)
 
-Harsh Shrivastava
-Computer Science Major
-📧 Email: (add your contact if you want)
-💼 GitHub: [your-github-username]
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to check [issues page](https://github.com/your-github-username/library-management-system/issues).
